@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Eo_circle_light-blue_white_letter-r.svg/1024px-Eo_circle_light-blue_white_letter-r.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px; 
+            height: 300px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        p {
+            color: #666666;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .success {
+            color: #28a745;
+        }
+
+        .error {
+            color: #dc3545;
+        }
+
+        .score {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Result</h1>
+        <div class="icon">
+            <script>
+                var getscore = sessionStorage.getItem('scoress');
+
+                if (getscore >= 70) {
+                    document.write('<i class="fas fa-check-circle success"></i>'); // Checkmark icon for success
+                } else {
+                    document.write('<i class="fas fa-times-circle error"></i>'); // X icon for failure
+                }
+            </script>
+        </div>
+        <script>
+            var getscore = sessionStorage.getItem('scoress');
+
+            if (getscore >= 70) {
+                document.write('<p class="success">Congratulations! You passed the quiz.</p>');
+            } else {
+                document.write('<p class="error">Oops! You need to work harder.</p>');
+            }
+
+            document.write('<p class="score">Your score: ' + getscore + '%</p>');
+        </script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
