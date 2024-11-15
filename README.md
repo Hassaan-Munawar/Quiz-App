@@ -1,4 +1,4 @@
-🎉 Excited to Share My Latest Project: A Modern Quiz Application! 🎉
+🎉 Excited to Share My Project: A Modern Quiz Application! 🎉
 
 I'm thrilled to announce the completion of my second quiz app, designed to provide an engaging and interactive experience. This project reflects my commitment to creating user-friendly, visually appealing, and highly functional web applications.
 
@@ -18,5 +18,3 @@ HTML, CSS, JavaScript.
 Bootstrap.
 
 This project has been a fantastic opportunity to enhance my skills in frontend development and UI/UX design. I'm particularly proud of the clean and modern interface that I was able to achieve, which I believe will set this app apart.
-
-Hosted Link : https://lnkd.in/dybpbKi3
